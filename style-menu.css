@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** regle General ****/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F7F7F7;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    top: -40px
+}
+
+.menu-container h2 {
+    border-bottom: 3px solid #99E2D0;
+    width: 8%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.menu-container h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+
+.menu-container p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**** Header ****/
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    object-fit: contain;
+    margin: 14px auto 5px;
+    width: 40%;
+}
+
+main {
+    background: #F7F7F7;
+}
+
+header .arrow {
+    padding-left: 20px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.background img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*** TITRE ****/
+
+.title-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.title-menu h1 {
+    font-family: 'Shrikhand';
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 20px;   
+}
+
+
+
+.title-menu  .heart__far {
+    position: absolute;
+    right: 16px;
+    font-size: 20px;
+    color: #101010;
+    margin-right: 30px;
+}
+
+.title-menu  .heart__fas {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    cursor: pointer;
+    right: 16px;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+    margin-right: 30px;
+}
+
+.title-menu  .heart__fas:hover {
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    opacity: 1;
+}
+
+
+/*** MENU ***/
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    display: flex;
+    margin: 0px 10px;
+    flex-direction: column;
+}
+
+.menu-card {
+    width: 100%;
+    background-color: #9356DC;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 5px 0;
+}
+
+.menu-item {
+    display: flex;
+    overflow: hidden;
+}
+
+.menu-item .item-price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: auto;
+    display: flex;
+    align-items: end;
+    margin-right: 5px;
+}
+
+.container-check {
+    display: flex;
+    margin-left: auto;
+    transform: translateX(0);
+    transition: all 1s ease;
+    margin-right: -60px;
+}
+
+.menu-card:hover {
+    transform: translateX(-60px);
+}
+
+.item-check {
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-check .fa-solid {
+    background-color: white;
+    border-radius: 50%;
+    color: #99E2D0;
+    padding: 2px;
+}
+
+.menu-container section {
+    animation: apparition 1s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.menu-container section:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.menu-container section:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.menu-container section:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+
+
+
+
+/*** Bouton ****/
+
+section .btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+section .btn button {
+    color: white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 16px;
+    align-items: center;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 13px 18px;
+    border: none;
+    transition: all 1s;
+}
+
+.btn button:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+
+/*** Footer ****/
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: white;
+}
+
+.container-footer .logo-footer {
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container-footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 25px;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.container-footer .fa-solid {
+    margin-right: 10px;
+}
