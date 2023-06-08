@@ -187,8 +187,8 @@ section .btn button {
 }
 
 .container-fonctionnement {
-    width: 100%;
-    margin: 0 20px;
+    width: 90%;
+   
 }
 
 .container-fonctionnement h2 {
@@ -241,7 +241,7 @@ section .btn button {
 .container-fonctionnement li .fa-mobile-alt,
 .container-fonctionnement li .fa-list-ul,
 .container-fonctionnement li .fa-store {
-    margin: 0 27px;
+    margin: 0 20px;
 }
 
 .container-fonctionnement .fa-mobile-alt,
@@ -266,23 +266,22 @@ section .btn button {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    flex-direction: column;
 }
 
 .container-card {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0 17px;
     text-align: left;
 }
 
-.container-card h2 {
+.title-restaurant {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 50px 0px 20px 0px
 }
 
 .container-card .card {
@@ -392,6 +391,7 @@ section .btn button {
 
 
    /*** fonctionnement *****/
+
     .main-container-fonctionnement ul {
             display: flex;
             flex-direction: row;
@@ -400,6 +400,40 @@ section .btn button {
             margin-bottom: 68px;      
     }
 
-    
+
+    /***** Restaurant *****/
+    .main-container-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-card {
+        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;      
+    }
+
+    .container-card .card {
+        width: 45%;
+        flex-direction: column;
+        display: flex;        
+    }
+
+    .title-restaurant {
+        margin-left: 25px;
+    }
+
+   
+
+
+    /*** Footer *****/
+
+    .container-footer ul {
+        display: flex;
+        flex-direction: row-reverse;       
+    }
 
 }
