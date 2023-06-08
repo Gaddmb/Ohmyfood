@@ -135,12 +135,14 @@ img {
 .menu {
     display: flex;
     flex-direction: column;
+   
 }
 
 .menu-container {
     display: flex;
     margin: 0px 10px;
     flex-direction: column;
+  
 }
 
 .menu-card {
@@ -154,7 +156,8 @@ img {
 
 .menu-item {
     display: flex;
-    overflow: hidden;
+    overflow: hidden; 
+    text-overflow: ellipsis;  
 }
 
 .menu-item .item-price {
@@ -172,13 +175,14 @@ img {
     display: flex;
     margin-left: auto;
     transform: translateX(0);
-    transition: all 1s ease;
-    margin-right: -60px;
+    transition: all 0.5s ease;
+    margin-right: -60px;  
 }
 
-.menu-card:hover {
-    transform: translateX(-60px);
+.menu-card:hover .container-check {
+    transform: translateX(-60px); 
 }
+
 
 .item-check {
     background: #99E2D0;
@@ -193,7 +197,7 @@ img {
     background-color: white;
     border-radius: 50%;
     color: #99E2D0;
-    padding: 2px;
+    padding: 2px;    
 }
 
 .menu-container section {
@@ -213,20 +217,15 @@ img {
     }
 }
 
-.menu-container section:nth-child(1) {
+.main-container section:nth-child(1) {
     animation-delay: 0.3s;
 }
-
-.menu-container section:nth-child(2) {
+.main-container section:nth-child(2) {
     animation-delay: 0.6s;
 }
-
-.menu-container section:nth-child(3) {
+.main-container section:nth-child(3) {
     animation-delay: 0.9s;
 }
-
-
-
 
 
 /*** Bouton ****/
