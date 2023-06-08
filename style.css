@@ -383,3 +383,23 @@ section .btn button {
 .container-footer .fa-solid {
     margin-right: 10px;
 }
+
+
+/***Media @ ****/
+
+
+@media (min-width: 768px) {
+
+
+   /*** fonctionnement *****/
+    .main-container-fonctionnement ul {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 24px;
+            margin-bottom: 68px;      
+    }
+
+    
+
+}
