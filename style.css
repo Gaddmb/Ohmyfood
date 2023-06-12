@@ -1,3 +1,5 @@
+/**** General règle ****/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
 
 * {
@@ -8,6 +10,18 @@
     text-decoration: none;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
 
 /**** LOADER *****/
 
@@ -25,7 +39,7 @@
     z-index: 1;
     animation: disappear 2s forwards 1s;
     transform-origin: top;
-    background-color: rgba(128,128,128,0.5);
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .loader::after {
@@ -106,15 +120,6 @@ header .location .fa-solid {
 }
 
 
-/**** General règle ****/
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
 /***** Sous header ****/
 
 .sous-header {
@@ -182,13 +187,13 @@ section .btn button {
 .main-container-fonctionnement {
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0px 20px;
 }
 
-.container-fonctionnement {
-    width: 90%;
-   
+.tittle-fonctionnement {
+    margin-top: 48px;
+    margin-bottom: 26px;
 }
 
 .container-fonctionnement h2 {
@@ -241,7 +246,7 @@ section .btn button {
 .container-fonctionnement li .fa-mobile-alt,
 .container-fonctionnement li .fa-list-ul,
 .container-fonctionnement li .fa-store {
-    margin: 0 20px;
+    padding: 0 20px;
 }
 
 .container-fonctionnement .fa-mobile-alt,
@@ -255,7 +260,7 @@ section .btn button {
 
 .container-fonctionnement li p {
     font-size: 14px;
-    margin: 27px 0;
+    padding: 27px 0;
 }
 
 
@@ -267,6 +272,7 @@ section .btn button {
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
+    padding: 0px 10px;
 }
 
 .container-card {
@@ -281,7 +287,7 @@ section .btn button {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    margin: 50px 0px 20px 0px
+    padding: 50px 0px 20px 0px
 }
 
 .container-card .card {
@@ -350,7 +356,7 @@ section .btn button {
 
 .container-card .heart .heart__fas:hover {
     background-image: linear-gradient(#FF79DA, #9356DC);
-    opacity: 1;   
+    opacity: 1;
 }
 
 
@@ -384,56 +390,111 @@ section .btn button {
 }
 
 
-/***Media @ ****/
-
+/*** Media @ ****/
 
 @media (min-width: 768px) {
 
+    /**** header ****/
 
-   /*** fonctionnement *****/
-
-    .main-container-fonctionnement ul {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            gap: 24px;
-            margin-bottom: 68px;      
+    header .logo img {
+        height: 34px;
     }
 
+    .sous-header h1 {
+        font-size: 40px;
+    }
+
+    /*** fonctionnement *****/
+
+    .main-container-fonctionnement ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 24px;
+        margin-bottom: 68px;
+    }
 
     /***** Restaurant *****/
+
     .main-container-card {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
+
     .container-card {
-        
         width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 30px;      
+        gap: 30px;
     }
 
     .container-card .card {
         width: 45%;
         flex-direction: column;
-        display: flex;        
+        display: flex;
     }
 
     .title-restaurant {
         margin-left: 25px;
     }
 
-   
-
-
     /*** Footer *****/
 
     .container-footer ul {
         display: flex;
-        flex-direction: row-reverse;       
+        flex-direction: row-reverse;
+        margin-top: 35px;
     }
+
+
+    @media (min-width: 1024px) {
+
+        /***** focntionnement ******/
+
+        .main-container-fonctionnement {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        /***** Restaurant ******/
+
+        .main-container-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-card {
+            margin: 0 auto;
+            width: 65%;
+        }
+
+        .title-restaurant {
+            margin-left: 20%;
+        }
+
+
+        /**** footer ***/
+
+        .logo-footer {
+            margin-left: 50px;
+        }
+
+        .container-footer ul {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 35px;
+        }
+
+
+
+
+
+    }
+
 
 }
