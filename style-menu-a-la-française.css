@@ -86,16 +86,12 @@ header .arrow {
   padding-left: 20px;
 }
 
-img {
-  height: 100%;
+main img {
+  height: 275px;
   width: 100%;
   object-fit: cover;
 }
 
-.background img {
-  width: 100%;
-  object-fit: cover;
-}
 
 /*** TITRE ****/
 
@@ -379,7 +375,7 @@ section .btn button {
 
     .title-menu .heart__far,
     .title-menu .heart__fas {
-      right: 260px;
+      right: 360px;
     }
 
     main img {
