@@ -385,6 +385,9 @@ section .btn button {
   margin-right: 10px;
 }
 
+.container-footer a {
+  color: white;
+}
 
 /*** Media @ ****/
 
